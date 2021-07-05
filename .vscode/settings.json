@@ -1,0 +1,17 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "files.exclude": {
+    ".gitignore": true,
+    ".prettierignore": true,
+    ".eslintignore": true,
+    ".eslintrc": true,
+    "next-env.d.ts": true,
+    "node_modules": true,
+    ".next": true,
+    ".github": true,
+    "postcss.config.js": true,
+    "README.md": true,
+    "yarn.lock": true,
+    "tsconfig.json": true
+  }
+}

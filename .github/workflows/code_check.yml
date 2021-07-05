@@ -1,0 +1,20 @@
+name: Code Check
+
+on: [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install plugins
+        run: npm install --no-optional
+
+      - name: Lint
+        run: npm run lint
